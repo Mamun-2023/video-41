@@ -1,11 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox Practice</title>
+    <style>
+      /* nav related styles */
+      nav ul {
+        display: flex;
+        justify-content: space-between;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(107, 72, 31);
+      }
+
+      .navigates {
+        display: flex;
+        margin-top: 20px;
+        margin-right: 150px;
+        gap: 20px;
+        font-size: large;
+      }
+
+      img {
+        width: 70%;
+        margin-left: 20px;
+      }
+      /* download section styles */
+      .download-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .download-text {
+        font-size: 60px;
+      }
+      #strong {
+        font-weight: bolder;
+      }
+
+      .version {
+        display: flex;
+        justify-content: center;
+      }
+      .version p {
+        font-weight: bold;
+        font-size: 24px;
+        color: rgb(111, 94, 73);
+      }
+      .download-btn-box {
+        text-align: center;
+      }
+      .btn-download {
+        color: #ffffff;
+        padding: 12px 20px !important;
+        min-height: 48px;
+        min-width: 256px;
+        text-align: center;
+        font-size: 14px;
+        background-color: #00b6d1;
+        border-width: 0px !important;
+        border-radius: 5px;
+        font-weight: bold;
+        font-style: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+
+      /* media query sections */
+      @media screen and (max-width: 720px) {
+        nav ul {
+          flex-direction: column;
+        }
+        .navigates {
+          flex-direction: column;
+        }
+        .download-section {
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <div class="image-container">
+            <li><img src="UE-Logo-1.webp" alt="" /></li>
+          </div>
+          <div class="navigates">
+            <li><a href="">Product</a></li>
+            <li><a href="">Pricing </a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Security and Compliance</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="download-section">
+        <div class="download-text">
+          <p>Download <span id="strong">Ultra Edit</span> For Windows</p>
+        </div>
+        <div class="download-image">
+          <img id="review" src="Reviews.png".png" alt="" />
+        </div>
+      </div>
+      <div class="version">
+        <p>
+          Download and try UltraEdit before you buy it! This download includes
+          the full Windows version of the text editor.
+        </p>
+      </div>
+      <div class="download-btn-box">
+        <button class="btn-download">Download MAC OR LINUX VERSION</button>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
 </html>
